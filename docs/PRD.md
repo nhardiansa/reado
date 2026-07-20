@@ -12,7 +12,7 @@ The primary problem Reado solves is the difficulty of tracking books a user want
 
 Beyond personal tracking, Reado also encourages users to feel more confident sharing their reading experience. Users can generate a share card for in-progress books or finished books, then share it to social media such as Instagram via the Android share sheet.
 
-Visually, Reado uses a claymorphism style: large rounded corners, thick borders, pastel colors, and black shadows with offsets that create a playful, tactile, and modern feel.
+Visually, Reado uses a neobrutalist style: sharp corners (small 8px radius), thick dark borders, bold high-contrast colors (yellow, pink, off-white on white), and solid black shadows with bottom-right offsets and zero blur, creating a playful, tactile, and modern feel.
 
 ---
 
@@ -35,7 +35,7 @@ Reado aims to deliver a reading-tracker experience that is lightweight, personal
 - Store data locally so the app remains usable offline.
 - Help users share reading progress and finished-book achievements in a visual format attractive for social media.
 - Encourage users to build a reading habit by making progress sharing feel easy, fun, and not embarrassing.
-- Provide a consistent, attractive, and easy-to-use claymorphism UI.
+- Provide a consistent, attractive, and easy-to-use neobrutalist UI.
 - Keep the MVP simple so it can be built and validated quickly.
 
 ---
@@ -93,7 +93,7 @@ Required features for the first version:
 11. Local data storage.
 12. Share progress card for in-progress books.
 13. Share finished book card for finished-book achievements.
-14. Consistent basic claymorphism UI.
+14. Consistent basic neobrutalist UI.
 
 ### 6.2 Should Have — MVP Plus
 
@@ -325,7 +325,7 @@ Output:
 - The system generates a share-card image.
 - The system shows a preview before the user shares the card.
 - The user can share the image via the Android share sheet to apps such as Instagram, WhatsApp, or any other app that supports image sharing.
-- Share-card design follows the claymorphism style.
+- Share-card design follows the neobrutalist style.
 - The primary share-card aspect ratio is optimized for Instagram Story, i.e. 9:16.
 - The MVP share card does not display the private note automatically.
 
@@ -513,27 +513,27 @@ The reason for storing both `fromPage` and `toPage` is so that pages-read-per-up
 
 ### 12.1 Visual Style
 
-Reado uses claymorphism with these characteristics:
+Reado uses neobrutalism with these characteristics:
 
-- Large rounded corners.
+- Sharp corners (small 8px radius).
 - Thick dark-colored borders.
-- Black shadows with a bottom-right offset.
-- Pastel background colors.
-- Playful cards and buttons.
-- Components feel like clay/plastic objects raised from the surface.
+- Solid black shadows with a bottom-right offset and zero blur.
+- Bold high-contrast colors — yellow, pink, and off-white on white.
+- Heavy display type (Archivo Black) paired with monospace (JetBrains Mono Bold).
+- Components feel like bold cutout/sticker shapes pinned flat to the surface.
 
 ### 12.2 Design Tokens
 
 ```text
-Primary Background: #F8EFD9
-Primary Accent: #FFB84C
-Secondary Accent: #A3D8F4
+Primary Background: #FFFFFF
+Primary Accent: #FFD52E
+Accent Pink: #FF4FA0
 Success: #9BE7A1
 Danger: #FF8A8A
-Text Primary: #1E1E1E
-Border: #1E1E1E
-Shadow: rgba(0, 0, 0, 0.85)
-Card Background: #FFF7E6
+Text Primary: #141414
+Border: #141414
+Shadow: #141414
+Card Background: #FFFDF7
 ```
 
 Spacing:
@@ -549,9 +549,9 @@ xl: 32
 Radius:
 
 ```text
-card: 24
-button: 20
-modal: 28
+card: 8
+button: 8
+modal: 8
 ```
 
 Border:
@@ -564,9 +564,16 @@ emphasized: 3
 Shadow:
 
 ```text
-default offset: 4, 4
-emphasized offset: 6, 6
+default offset: 3, 3
+emphasized offset: 4, 4
 blurRadius: 0
+```
+
+Fonts:
+
+```text
+archivoBlack: ArchivoBlack_400Regular
+jetbrainsMonoBold: JetBrainsMono_700Bold
 ```
 
 These tokens are exported from `src/theme/tokens.ts` and mirrored in `tailwind.config.js` so they are available both as TypeScript constants and as Tailwind utility classes (e.g. `bg-clay-bg`, `border-clay`, `shadow-clay`).
@@ -603,7 +610,7 @@ const cardStyle: ViewStyle = {
 
 ### 12.4 Design Constraints
 
-- Use clay shadows mainly on primary cards and interactive components.
+- Use hard shadows mainly on primary cards and interactive components.
 - Avoid thick shadows on too many elements within one screen.
 - Keep text contrast against backgrounds clear.
 - Minimum touch target 48x48 dp.
@@ -612,7 +619,7 @@ const cardStyle: ViewStyle = {
 
 ### 12.5 Share Card Design
 
-The share card follows the claymorphism visual style and is designed to look attractive when shared on social media.
+The share card follows the neobrutalist visual style and is designed to look attractive when shared on social media.
 
 Design principles:
 
@@ -718,7 +725,7 @@ Design principles:
 
 ### 15.5 UI Consistency
 
-- Primary components use claymorphism consistently.
+- Primary components use neobrutalism consistently.
 - Primary buttons have comfortable touch targets.
 - Error states are easy to read and understand.
 
@@ -743,7 +750,7 @@ For the MVP, product success is measured by task completion and the quality of t
 - The user can find a specific book in a list of 100 books via search or filter.
 - All core features can be completed without an internet connection.
 - No data loss under normal usage scenarios.
-- Claymorphism UI is consistent across the library, form, detail, primary dialogs, and share card.
+- Neobrutalist UI is consistent across the library, form, detail, primary dialogs, and share card.
 
 If the app is released publicly, advanced metrics may include:
 
@@ -797,7 +804,7 @@ Mitigation:
 
 Risk:
 
-- Claymorphism can make the UI too busy if every element gets a thick border and shadow.
+- Neobrutalism can make the UI too busy if every element gets a thick border and shadow.
 
 Mitigation:
 
@@ -869,7 +876,7 @@ Priorities after the MVP:
 
 ## 19. MVP Summary
 
-The Reado MVP is an Expo + React Native Android app for personal reading tracking — local-first and easy to share. The MVP focus is the book library, book CRUD, page-progress updates, status filter, simple search, private notes, share progress card, share finished-book card, local storage, and basic claymorphism visuals.
+The Reado MVP is an Expo + React Native Android app for personal reading tracking — local-first and easy to share. The MVP focus is the book library, book CRUD, page-progress updates, status filter, simple search, private notes, share progress card, share finished-book card, local storage, and basic neobrutalist visuals.
 
 Key MVP decisions:
 

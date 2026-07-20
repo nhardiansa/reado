@@ -7,7 +7,7 @@
 ## 1. Project Overview
 
 - Name: Reado
-- Description: Mobile Android book reading tracker app. Local-first, claymorphism UI, share-card generation for social media.
+- Description: Mobile Android book reading tracker app. Local-first, neobrutalist UI, share-card generation for social media.
 - Goal: Help users record books, track reading progress by last page read, and share reading milestones as visual cards.
 - Target Users: Personal readers who want simple offline tracking without accounts.
 - Version: v1.0.0
@@ -20,8 +20,8 @@
 - Language: TypeScript (strict mode)
 - Framework: Expo SDK 57 + React Native 0.86 + React 19
 - Routing: Expo Router (file-based, `src/app/`)
-- Styling: NativeWind v4 (Tailwind CSS) + claymorphism theme tokens
-- UI Library: Custom claymorphism system in `src/components/`
+- Styling: NativeWind v4 (Tailwind CSS) + neobrutalist theme tokens
+- UI Library: Custom neobrutalist system in `src/components/`
 - Local DB: WatermelonDB (SQLite, reactive, schema migrations) — replaces Isar from the original Flutter PRD
 - KV Store: MMKV (lightweight preferences) — replaces SharedPreferences
 - State Management: Zustand
@@ -87,7 +87,7 @@ src/
     models/         #   Model classes
     migrations/     #   Schema migrations
   lib/              # Third-party setup (DB instance, MMKV, share-card renderer)
-  components/       # Shared claymorphism UI system (ClayCard, ClayButton, etc)
+  components/       # Shared neobrutalist UI system (ClayCard, ClayButton, etc)
   theme/            # Design tokens (PRD 12.2)
   navigation/       # Route types, deep-link config
   stores/           # Global UI state (Zustand)
@@ -120,7 +120,7 @@ src/features/<name>/
 3. `db/` — imported only by `repositories/` and `lib/`. Anything else importing from `db/` is a layering violation.
 4. `features/` — orchestrate. Feature hooks call services for rules and repositories for data, then expose ready-to-render state to screens.
 5. `app/` routes — thin. Mount a feature screen and pass route params. No hooks, no logic, no data fetching.
-6. `components/` — claymorphism design system only. Feature-specific visuals live in the feature.
+6. `components/` — neobrutalist design system only. Feature-specific visuals live in the feature.
 
 ### File placement
 
@@ -238,12 +238,13 @@ Full details in `docs/ARCHITECTURE.md`.
 - No inline `style={{}}` except for truly dynamic values that cannot be precomputed
 - No !important
 
-# Claymorphism Tokens
-- Colors: bg-clay-bg, bg-clay-card, bg-clay-accent, bg-clay-secondary, text-clay-text, border-clay-border
+# Neobrutalist Tokens
+- Colors: bg-clay-bg, bg-clay-card, bg-clay-accent, bg-clay-accent-pink, text-clay-text, border-clay
 - Status: bg-clay-success, bg-clay-danger
-- Radius: rounded-clay (24), rounded-clay-button (20), rounded-clay-modal (28)
+- Radius: rounded-clay (8), rounded-clay-button (8), rounded-clay-modal (8)
 - Border: border-clay (2), border-clay-emphasized (3)
-- Shadow: shadow-clay (default 4,4), shadow-clay-emphasized (6,6)
+- Shadow: shadow-clay (default 3,3), shadow-clay-emphasized (4,4)
+- Fonts: font-archivo (ArchivoBlack_400Regular), font-jetbrains (JetBrainsMono_700Bold)
 - Spacing: p-xs p-sm p-md p-lg p-xl (4 / 8 / 16 / 24 / 32)
 - Tokens are defined in src/theme/tokens.ts and mirrored in tailwind.config.js — keep both in sync
 
@@ -315,7 +316,7 @@ example: "flex-1 p-md rounded-clay bg-clay-card border-clay border-2 shadow-clay
 - [ ] Local data storage
 - [ ] Share progress card for in-progress books
 - [ ] Share finished book card for finished-book achievements
-- [ ] Consistent basic claymorphism UI
+- [ ] Consistent basic neobrutalist UI
 
 # MVP Plus and Post-MVP — see docs/PRD.md sections 6.2, 6.3, 18
 ```
@@ -332,7 +333,7 @@ example: "flex-1 p-md rounded-clay bg-clay-card border-clay border-2 shadow-clay
 # What to Test
 - src/services/      — every business rule branch (status transitions PRD 9.2, progress calc PRD 8.6, auto-finished, startedAt/finishedAt derivation). Pure functions, no mocks.
 - src/repositories/  — repository methods return correct domain models, handle not-found, persist correctly. Use WatermelonDB memory adapter.
-- src/components/    — claymorphism primitives apply correct tokens, accept className/style overrides.
+- src/components/    — neobrutalist primitives apply correct tokens, accept className/style overrides.
 - src/features/      — screens render correct content for state, user actions call right hook, empty/error states show.
 - src/app/           — route renders expected feature screen, params flow through.
 
@@ -356,7 +357,7 @@ services > repositories > components > features > routes
 
 ## 12. Do Not
 
-If an instruction or prompt is ambiguous, ASK FIRST before coding. Do not assume and proceed without confirmation.
+If an instruction or prompt is ambiguous, ASK FIRST before coding. Do not assume and proceed without confirmation. If you are in plan mode and you want to write something, ask for confirmation first, do not write in terminal especially if you want to write plan, just write to do and ask me to make build mode activate
 
 ```
 # Structure and Files

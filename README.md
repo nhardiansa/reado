@@ -1,12 +1,12 @@
 # Reado
 
-Aplikasi mobile Android untuk tracking bacaan buku — local-first, claymorphism UI, share card untuk media sosial. Lihat [`docs/PRD.md`](./docs/PRD.md) untuk spesifikasi lengkap dan [`docs/ARCHITECTURE.md`](./docs/ARCHITECTURE.md) untuk struktur kode.
+Aplikasi mobile Android untuk tracking bacaan buku — local-first, neobrutalist UI, share card untuk media sosial. Lihat [`docs/PRD.md`](./docs/PRD.md) untuk spesifikasi lengkap dan [`docs/ARCHITECTURE.md`](./docs/ARCHITECTURE.md) untuk struktur kode.
 
 ## Tech Stack
 
 - **Framework**: Expo SDK 57 + React Native 0.86 + React 19 + TypeScript
 - **Routing**: Expo Router (file-based, `src/app/`)
-- **Styling**: NativeWind v4 (Tailwind CSS) + claymorphism theme tokens
+- **Styling**: NativeWind v4 (Tailwind CSS) + neobrutalist theme tokens
 - **Local DB**: WatermelonDB (SQLite, reactive, schema migration)
 - **KV store**: MMKV (preferensi ringan)
 - **State**: Zustand
@@ -70,7 +70,7 @@ src/
 │   ├── models/       # Model classes
 │   └── migrations/   # Schema migrations
 ├── lib/              # Third-party setup (DB instance, MMKV, share-card renderer)
-├── components/        # Shared claymorphism UI system (ClayCard, ClayButton, dll)
+├── components/        # Shared neobrutalist UI system (ClayCard, ClayButton, dll)
 ├── theme/            # Design tokens (PRD 12.2)
 ├── navigation/       # Route types, deep-link config
 ├── stores/           # Global UI state (zustand)
@@ -102,7 +102,7 @@ Feature-to-feature import lewat barrel `index.ts` saja. File internal feature ti
 ```
 Route (app/) → Feature Screen → Feature Hook → Service (business rule)
                                         ↘ Repository → WatermelonDB
-Feature Screen → components/ (shared claymorphism system)
+Feature Screen → components/ (shared neobrutalist system)
 ```
 
 Detail lengkap (layer rules, testing convention, dependency direction) ada di [`docs/ARCHITECTURE.md`](./docs/ARCHITECTURE.md).
@@ -113,4 +113,4 @@ Detail lengkap (layer rules, testing convention, dependency direction) ada di [`
 
 ## Design Tokens
 
-Claymorphism tokens ada di [`src/theme/tokens.ts`](./src/theme/tokens.ts) — warna, spacing, radius, border, shadow sesuai PRD section 12.2. Token yang sama di-mirror di `tailwind.config.js` supaya tersedia sebagai utility class (e.g. `bg-clay-bg`, `border-clay`, `shadow-clay`).
+Neobrutalist tokens ada di [`src/theme/tokens.ts`](./src/theme/tokens.ts) — warna, spacing, radius, border, shadow, fonts sesuai PRD section 12.2. Token yang sama di-mirror di `tailwind.config.js` supaya tersedia sebagai utility class (e.g. `bg-clay-bg`, `border-clay`, `shadow-clay`, `font-archivo`, `font-jetbrains`).
