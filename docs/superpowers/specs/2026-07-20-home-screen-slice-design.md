@@ -187,7 +187,7 @@ Box with neobrutalist border + hard shadow. Default: `as='View'`, `borderWidth='
 
 - h70, bg-clay-card, border-t-3 border-clay. 3 equal tabs (130-wide each), icon-only.
 - Each tab: 32×32 `ClayCard` (radius 8, border-clay-emphasized, shadow='none') holding an 18px lucide icon.
-  - **main** = bg-clay-accent (yellow, active) + `AddressBook` icon
+  - **main** = bg-clay-accent (yellow, active) + `Library` icon
   - **reviews** = transparent bg + `MessageCircle`
   - **settings** = transparent bg + `Settings`
 - `onPress` = no-op for now (static slice).
@@ -199,7 +199,7 @@ Box with neobrutalist border + hard shadow. Default: `as='View'`, `borderWidth='
 | ---------------- | ------------------- |
 | `book`           | `Book`              |
 | `book-open`      | `BookOpen`          |
-| `address-book`   | `AddressBook`       |
+| `address-book` | `Library` |
 | `chat-message`   | `MessageCircle`     |
 | `setting-1`      | `Settings`          |
 
