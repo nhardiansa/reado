@@ -6,15 +6,19 @@ module.exports = {
     extend: {
       colors: {
         clay: {
-          bg: "#F8EFD9",
-          accent: "#FFB84C",
-          secondary: "#A3D8F4",
+          bg: "#FFFFFF",
+          accent: "#FFD52E",
+          "accent-pink": "#FF4FA0",
           success: "#9BE7A1",
           danger: "#FF8A8A",
-          text: "#1E1E1E",
-          border: "#1E1E1E",
-          card: "#FFF7E6",
+          text: "#141414",
+          border: "#141414",
+          card: "#FFFDF7",
         },
+      },
+      fontFamily: {
+        archivo: ["ArchivoBlack_400Regular"],
+        jetbrains: ["JetBrainsMono_700Bold"],
       },
       spacing: {
         xs: "4",
@@ -24,17 +28,17 @@ module.exports = {
         xl: "32",
       },
       borderRadius: {
-        clay: "24",
-        "clay-button": "20",
-        "clay-modal": "28",
+        clay: "8",
+        "clay-button": "8",
+        "clay-modal": "8",
       },
       borderWidth: {
         clay: "2",
         "clay-emphasized": "3",
       },
       boxShadow: {
-        clay: "4 4 0 0 rgba(0,0,0,0.85)",
-        "clay-emphasized": "6 6 0 0 rgba(0,0,0,0.85)",
+        clay: "3 3 0 0 #141414",
+        "clay-emphasized": "4 4 0 0 #141414",
       },
     },
   },
