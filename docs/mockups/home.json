@@ -1,0 +1,1625 @@
+{
+  "$comment": "This is structural design data exported by the Figma Raw plugin. It is formatted to help LLMs (Large Language Models) understand design structures and components from Figma designs.",
+  "name": "Home design",
+  "type": "FRAME",
+  "width": 390,
+  "height": 798,
+  "layoutMode": "NONE",
+  "primaryAxisSizingMode": "AUTO",
+  "counterAxisSizingMode": "FIXED",
+  "primaryAxisAlignItems": "MIN",
+  "counterAxisAlignItems": "MIN",
+  "fills": [
+    {
+      "type": "SOLID",
+      "opacity": 1,
+      "color": {
+        "r": 1,
+        "g": 1,
+        "b": 1,
+        "a": 1,
+        "hex": "#ffffff"
+      }
+    }
+  ],
+  "strokeWeight": 1,
+  "strokeAlign": "INSIDE",
+  "strokeCap": "NONE",
+  "strokeJoin": "MITER",
+  "children": [
+    {
+      "name": "contents",
+      "type": "FRAME",
+      "width": 390,
+      "height": 593,
+      "layoutMode": "VERTICAL",
+      "primaryAxisSizingMode": "AUTO",
+      "counterAxisSizingMode": "FIXED",
+      "primaryAxisAlignItems": "MIN",
+      "counterAxisAlignItems": "MIN",
+      "itemSpacing": 20,
+      "strokeWeight": 1,
+      "strokeAlign": "INSIDE",
+      "strokeCap": "NONE",
+      "strokeJoin": "MITER",
+      "children": [
+        {
+          "name": "heading",
+          "type": "FRAME",
+          "width": 390,
+          "height": 52,
+          "layoutMode": "HORIZONTAL",
+          "primaryAxisSizingMode": "FIXED",
+          "counterAxisSizingMode": "AUTO",
+          "primaryAxisAlignItems": "SPACE_BETWEEN",
+          "counterAxisAlignItems": "CENTER",
+          "paddingLeft": 22,
+          "paddingRight": 22,
+          "itemSpacing": 133,
+          "strokeWeight": 1,
+          "strokeAlign": "INSIDE",
+          "strokeCap": "NONE",
+          "strokeJoin": "MITER",
+          "children": [
+            {
+              "name": "say-hi",
+              "type": "FRAME",
+              "width": 176,
+              "height": 52,
+              "layoutMode": "VERTICAL",
+              "primaryAxisSizingMode": "AUTO",
+              "counterAxisSizingMode": "AUTO",
+              "primaryAxisAlignItems": "MIN",
+              "counterAxisAlignItems": "MIN",
+              "itemSpacing": 2,
+              "strokeWeight": 1,
+              "strokeAlign": "INSIDE",
+              "strokeCap": "NONE",
+              "strokeJoin": "MITER",
+              "children": [
+                {
+                  "name": "HALO, RANGGA",
+                  "type": "TEXT",
+                  "width": 87,
+                  "height": 16,
+                  "fills": [
+                    {
+                      "type": "SOLID",
+                      "opacity": 1,
+                      "color": {
+                        "r": 0.0784313753247261,
+                        "g": 0.0784313753247261,
+                        "b": 0.0784313753247261,
+                        "a": 1,
+                        "hex": "#141414"
+                      }
+                    }
+                  ],
+                  "strokeWeight": 1,
+                  "strokeAlign": "OUTSIDE",
+                  "strokeCap": "NONE",
+                  "strokeJoin": "MITER",
+                  "characters": "HALO, RANGGA",
+                  "fontSize": 12,
+                  "fontName": {
+                    "family": "JetBrains Mono",
+                    "style": "Bold"
+                  },
+                  "fontWeight": 700,
+                  "letterSpacing": {
+                    "unit": "PERCENT",
+                    "value": 0
+                  },
+                  "lineHeight": {
+                    "unit": "AUTO"
+                  },
+                  "textAlignHorizontal": "LEFT",
+                  "textAlignVertical": "TOP",
+                  "textAutoResize": "WIDTH_AND_HEIGHT",
+                  "textCase": "ORIGINAL",
+                  "textDecoration": "NONE"
+                },
+                {
+                  "name": "Bookshelf",
+                  "type": "TEXT",
+                  "width": 176,
+                  "height": 34,
+                  "fills": [
+                    {
+                      "type": "SOLID",
+                      "opacity": 1,
+                      "color": {
+                        "r": 0.0784313753247261,
+                        "g": 0.0784313753247261,
+                        "b": 0.0784313753247261,
+                        "a": 1,
+                        "hex": "#141414"
+                      }
+                    }
+                  ],
+                  "strokeWeight": 1,
+                  "strokeAlign": "OUTSIDE",
+                  "strokeCap": "NONE",
+                  "strokeJoin": "MITER",
+                  "characters": "Bookshelf",
+                  "fontSize": 34,
+                  "fontName": {
+                    "family": "Archivo",
+                    "style": "Black"
+                  },
+                  "fontWeight": 900,
+                  "letterSpacing": {
+                    "unit": "PIXELS",
+                    "value": -1
+                  },
+                  "lineHeight": {
+                    "unit": "PIXELS",
+                    "value": 34
+                  },
+                  "textAlignHorizontal": "LEFT",
+                  "textAlignVertical": "TOP",
+                  "textAutoResize": "WIDTH_AND_HEIGHT",
+                  "textCase": "ORIGINAL",
+                  "textDecoration": "NONE"
+                }
+              ]
+            },
+            {
+              "name": "add-new",
+              "type": "FRAME",
+              "width": 48,
+              "height": 46,
+              "cornerRadius": 8,
+              "layoutMode": "VERTICAL",
+              "primaryAxisSizingMode": "FIXED",
+              "counterAxisSizingMode": "AUTO",
+              "primaryAxisAlignItems": "CENTER",
+              "counterAxisAlignItems": "CENTER",
+              "paddingLeft": 15,
+              "paddingRight": 15,
+              "paddingTop": 6,
+              "paddingBottom": 10,
+              "fills": [
+                {
+                  "type": "SOLID",
+                  "opacity": 1,
+                  "color": {
+                    "r": 1,
+                    "g": 0.8352941274642944,
+                    "b": 0.18039216101169586,
+                    "a": 1,
+                    "hex": "#ffd52e"
+                  }
+                }
+              ],
+              "strokes": [
+                {
+                  "type": "SOLID",
+                  "opacity": 1,
+                  "color": {
+                    "r": 0.0784313753247261,
+                    "g": 0.0784313753247261,
+                    "b": 0.0784313753247261,
+                    "a": 1,
+                    "hex": "#141414"
+                  }
+                }
+              ],
+              "strokeWeight": 3,
+              "strokeAlign": "INSIDE",
+              "strokeCap": "NONE",
+              "strokeJoin": "MITER",
+              "effects": [
+                {
+                  "type": "DROP_SHADOW",
+                  "radius": 0,
+                  "spread": 0,
+                  "offset": {
+                    "x": 3,
+                    "y": 3
+                  },
+                  "color": {
+                    "r": 0.0784313753247261,
+                    "g": 0.0784313753247261,
+                    "b": 0.0784313753247261,
+                    "a": 1,
+                    "hex": "#141414"
+                  }
+                }
+              ],
+              "children": [
+                {
+                  "name": "+",
+                  "type": "TEXT",
+                  "width": 18,
+                  "height": 18,
+                  "fills": [
+                    {
+                      "type": "SOLID",
+                      "opacity": 1,
+                      "color": {
+                        "r": 0.0784313753247261,
+                        "g": 0.0784313753247261,
+                        "b": 0.0784313753247261,
+                        "a": 1,
+                        "hex": "#141414"
+                      }
+                    }
+                  ],
+                  "strokeWeight": 1,
+                  "strokeAlign": "OUTSIDE",
+                  "strokeCap": "NONE",
+                  "strokeJoin": "MITER",
+                  "characters": "+",
+                  "fontSize": 26,
+                  "fontName": {
+                    "family": "Archivo",
+                    "style": "Black"
+                  },
+                  "fontWeight": 900,
+                  "letterSpacing": {
+                    "unit": "PIXELS",
+                    "value": 0
+                  },
+                  "lineHeight": {
+                    "unit": "PIXELS",
+                    "value": 0
+                  },
+                  "textAlignHorizontal": "CENTER",
+                  "textAlignVertical": "CENTER",
+                  "textAutoResize": "WIDTH_AND_HEIGHT",
+                  "textCase": "ORIGINAL",
+                  "textDecoration": "NONE"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "status",
+          "type": "FRAME",
+          "width": 390,
+          "height": 71,
+          "layoutMode": "HORIZONTAL",
+          "primaryAxisSizingMode": "FIXED",
+          "counterAxisSizingMode": "FIXED",
+          "primaryAxisAlignItems": "MIN",
+          "counterAxisAlignItems": "MIN",
+          "paddingLeft": 22,
+          "paddingRight": 22,
+          "itemSpacing": 10,
+          "strokeWeight": 1,
+          "strokeAlign": "INSIDE",
+          "strokeCap": "NONE",
+          "strokeJoin": "MITER",
+          "children": [
+            {
+              "name": "done",
+              "type": "FRAME",
+              "width": 168,
+              "height": 71,
+              "cornerRadius": 8,
+              "layoutMode": "VERTICAL",
+              "primaryAxisSizingMode": "AUTO",
+              "counterAxisSizingMode": "FIXED",
+              "primaryAxisAlignItems": "MIN",
+              "counterAxisAlignItems": "MIN",
+              "paddingLeft": 15,
+              "paddingRight": 15,
+              "paddingTop": 13,
+              "paddingBottom": 13,
+              "fills": [
+                {
+                  "type": "SOLID",
+                  "opacity": 1,
+                  "color": {
+                    "r": 1,
+                    "g": 0.9921568632125854,
+                    "b": 0.9686274528503418,
+                    "a": 1,
+                    "hex": "#fffdf7"
+                  }
+                }
+              ],
+              "strokes": [
+                {
+                  "type": "SOLID",
+                  "opacity": 1,
+                  "color": {
+                    "r": 0.0784313753247261,
+                    "g": 0.0784313753247261,
+                    "b": 0.0784313753247261,
+                    "a": 1,
+                    "hex": "#141414"
+                  }
+                }
+              ],
+              "strokeWeight": 3,
+              "strokeAlign": "INSIDE",
+              "strokeCap": "NONE",
+              "strokeJoin": "MITER",
+              "effects": [
+                {
+                  "type": "DROP_SHADOW",
+                  "radius": 0,
+                  "spread": 0,
+                  "offset": {
+                    "x": 4,
+                    "y": 4
+                  },
+                  "color": {
+                    "r": 0.0784313753247261,
+                    "g": 0.0784313753247261,
+                    "b": 0.0784313753247261,
+                    "a": 1,
+                    "hex": "#141414"
+                  }
+                }
+              ],
+              "children": [
+                {
+                  "name": "Frame 4",
+                  "type": "FRAME",
+                  "width": 138,
+                  "height": 45,
+                  "layoutMode": "HORIZONTAL",
+                  "primaryAxisSizingMode": "FIXED",
+                  "counterAxisSizingMode": "AUTO",
+                  "primaryAxisAlignItems": "MIN",
+                  "counterAxisAlignItems": "CENTER",
+                  "itemSpacing": 4,
+                  "strokeWeight": 1,
+                  "strokeAlign": "INSIDE",
+                  "strokeCap": "NONE",
+                  "strokeJoin": "MITER",
+                  "children": [
+                    {
+                      "name": "tdesign:book",
+                      "type": "FRAME",
+                      "width": 35,
+                      "height": 35,
+                      "layoutMode": "NONE",
+                      "primaryAxisSizingMode": "FIXED",
+                      "counterAxisSizingMode": "FIXED",
+                      "primaryAxisAlignItems": "MIN",
+                      "counterAxisAlignItems": "MIN",
+                      "fills": [
+                        {
+                          "type": "SOLID",
+                          "opacity": 1,
+                          "color": {
+                            "r": 1,
+                            "g": 1,
+                            "b": 1,
+                            "a": 1,
+                            "hex": "#ffffff"
+                          }
+                        }
+                      ],
+                      "strokeWeight": 1.4583332538604736,
+                      "strokeAlign": "INSIDE",
+                      "strokeCap": "NONE",
+                      "strokeJoin": "MITER"
+                    },
+                    {
+                      "name": "Frame 3",
+                      "type": "FRAME",
+                      "width": 99,
+                      "height": 45,
+                      "layoutMode": "VERTICAL",
+                      "primaryAxisSizingMode": "AUTO",
+                      "counterAxisSizingMode": "FIXED",
+                      "primaryAxisAlignItems": "MIN",
+                      "counterAxisAlignItems": "MIN",
+                      "strokeWeight": 1,
+                      "strokeAlign": "INSIDE",
+                      "strokeCap": "NONE",
+                      "strokeJoin": "MITER"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "on-progress",
+              "type": "FRAME",
+              "width": 168,
+              "height": 71,
+              "cornerRadius": 8,
+              "layoutMode": "VERTICAL",
+              "primaryAxisSizingMode": "AUTO",
+              "counterAxisSizingMode": "FIXED",
+              "primaryAxisAlignItems": "MIN",
+              "counterAxisAlignItems": "MIN",
+              "paddingLeft": 15,
+              "paddingRight": 15,
+              "paddingTop": 13,
+              "paddingBottom": 13,
+              "fills": [
+                {
+                  "type": "SOLID",
+                  "opacity": 1,
+                  "color": {
+                    "r": 1,
+                    "g": 0.30980393290519714,
+                    "b": 0.6274510025978088,
+                    "a": 1,
+                    "hex": "#ff4fa0"
+                  }
+                }
+              ],
+              "strokes": [
+                {
+                  "type": "SOLID",
+                  "opacity": 1,
+                  "color": {
+                    "r": 0.0784313753247261,
+                    "g": 0.0784313753247261,
+                    "b": 0.0784313753247261,
+                    "a": 1,
+                    "hex": "#141414"
+                  }
+                }
+              ],
+              "strokeWeight": 3,
+              "strokeAlign": "INSIDE",
+              "strokeCap": "NONE",
+              "strokeJoin": "MITER",
+              "effects": [
+                {
+                  "type": "DROP_SHADOW",
+                  "radius": 0,
+                  "spread": 0,
+                  "offset": {
+                    "x": 4,
+                    "y": 4
+                  },
+                  "color": {
+                    "r": 0.0784313753247261,
+                    "g": 0.0784313753247261,
+                    "b": 0.0784313753247261,
+                    "a": 1,
+                    "hex": "#141414"
+                  }
+                }
+              ],
+              "children": [
+                {
+                  "name": "Frame 6",
+                  "type": "FRAME",
+                  "width": 138,
+                  "height": 45,
+                  "layoutMode": "HORIZONTAL",
+                  "primaryAxisSizingMode": "FIXED",
+                  "counterAxisSizingMode": "AUTO",
+                  "primaryAxisAlignItems": "MIN",
+                  "counterAxisAlignItems": "CENTER",
+                  "itemSpacing": 4,
+                  "strokeWeight": 1,
+                  "strokeAlign": "INSIDE",
+                  "strokeCap": "NONE",
+                  "strokeJoin": "MITER",
+                  "children": [
+                    {
+                      "name": "tdesign:book-open",
+                      "type": "FRAME",
+                      "width": 35,
+                      "height": 35,
+                      "layoutMode": "NONE",
+                      "primaryAxisSizingMode": "AUTO",
+                      "counterAxisSizingMode": "FIXED",
+                      "primaryAxisAlignItems": "MIN",
+                      "counterAxisAlignItems": "MIN",
+                      "fills": [
+                        {
+                          "type": "SOLID",
+                          "opacity": 1,
+                          "color": {
+                            "r": 1,
+                            "g": 1,
+                            "b": 1,
+                            "a": 1,
+                            "hex": "#ffffff"
+                          }
+                        }
+                      ],
+                      "strokeWeight": 1.625,
+                      "strokeAlign": "INSIDE",
+                      "strokeCap": "NONE",
+                      "strokeJoin": "MITER"
+                    },
+                    {
+                      "name": "Frame 7",
+                      "type": "FRAME",
+                      "width": 99,
+                      "height": 45,
+                      "layoutMode": "VERTICAL",
+                      "primaryAxisSizingMode": "AUTO",
+                      "counterAxisSizingMode": "FIXED",
+                      "primaryAxisAlignItems": "MIN",
+                      "counterAxisAlignItems": "MIN",
+                      "strokeWeight": 1,
+                      "strokeAlign": "INSIDE",
+                      "strokeCap": "NONE",
+                      "strokeJoin": "MITER"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "activites",
+          "type": "FRAME",
+          "width": 390,
+          "height": 430,
+          "layoutMode": "VERTICAL",
+          "primaryAxisSizingMode": "FIXED",
+          "counterAxisSizingMode": "FIXED",
+          "primaryAxisAlignItems": "MIN",
+          "counterAxisAlignItems": "MIN",
+          "paddingLeft": 22,
+          "paddingRight": 22,
+          "itemSpacing": 14,
+          "strokeWeight": 1,
+          "strokeAlign": "INSIDE",
+          "strokeCap": "NONE",
+          "strokeJoin": "MITER",
+          "children": [
+            {
+              "name": "book progres",
+              "type": "FRAME",
+              "width": 346,
+              "height": 131,
+              "cornerRadius": 8,
+              "layoutMode": "HORIZONTAL",
+              "primaryAxisSizingMode": "FIXED",
+              "counterAxisSizingMode": "AUTO",
+              "primaryAxisAlignItems": "MIN",
+              "counterAxisAlignItems": "MIN",
+              "paddingLeft": 15,
+              "paddingRight": 15,
+              "paddingTop": 15,
+              "paddingBottom": 15,
+              "itemSpacing": 14,
+              "fills": [
+                {
+                  "type": "SOLID",
+                  "opacity": 1,
+                  "color": {
+                    "r": 1,
+                    "g": 0.9921568632125854,
+                    "b": 0.9686274528503418,
+                    "a": 1,
+                    "hex": "#fffdf7"
+                  }
+                }
+              ],
+              "strokes": [
+                {
+                  "type": "SOLID",
+                  "opacity": 1,
+                  "color": {
+                    "r": 0.0784313753247261,
+                    "g": 0.0784313753247261,
+                    "b": 0.0784313753247261,
+                    "a": 1,
+                    "hex": "#141414"
+                  }
+                }
+              ],
+              "strokeWeight": 3,
+              "strokeAlign": "INSIDE",
+              "strokeCap": "NONE",
+              "strokeJoin": "MITER",
+              "effects": [
+                {
+                  "type": "DROP_SHADOW",
+                  "radius": 0,
+                  "spread": 0,
+                  "offset": {
+                    "x": 3,
+                    "y": 3
+                  },
+                  "color": {
+                    "r": 0.0784313753247261,
+                    "g": 0.0784313753247261,
+                    "b": 0.0784313753247261,
+                    "a": 1,
+                    "hex": "#141414"
+                  }
+                }
+              ],
+              "children": [
+                {
+                  "name": "pict",
+                  "type": "FRAME",
+                  "width": 64,
+                  "height": 100.6875,
+                  "layoutMode": "VERTICAL",
+                  "primaryAxisSizingMode": "FIXED",
+                  "counterAxisSizingMode": "FIXED",
+                  "primaryAxisAlignItems": "MIN",
+                  "counterAxisAlignItems": "MIN",
+                  "paddingBottom": 8.6875,
+                  "strokeWeight": 1,
+                  "strokeAlign": "INSIDE",
+                  "strokeCap": "NONE",
+                  "strokeJoin": "MITER",
+                  "children": [
+                    {
+                      "name": "Frame 8",
+                      "type": "FRAME",
+                      "width": 64,
+                      "height": 92,
+                      "cornerRadius": 4,
+                      "layoutMode": "NONE",
+                      "primaryAxisSizingMode": "AUTO",
+                      "counterAxisSizingMode": "FIXED",
+                      "primaryAxisAlignItems": "MIN",
+                      "counterAxisAlignItems": "MIN",
+                      "strokes": [
+                        {
+                          "type": "SOLID",
+                          "opacity": 1,
+                          "color": {
+                            "r": 0,
+                            "g": 0,
+                            "b": 0,
+                            "a": 1,
+                            "hex": "#000000"
+                          }
+                        }
+                      ],
+                      "strokeWeight": 3,
+                      "strokeAlign": "INSIDE",
+                      "strokeCap": "NONE",
+                      "strokeJoin": "MITER"
+                    }
+                  ]
+                },
+                {
+                  "name": "Frame",
+                  "type": "FRAME",
+                  "width": 238,
+                  "height": 101,
+                  "layoutMode": "VERTICAL",
+                  "primaryAxisSizingMode": "AUTO",
+                  "counterAxisSizingMode": "FIXED",
+                  "primaryAxisAlignItems": "MIN",
+                  "counterAxisAlignItems": "MIN",
+                  "itemSpacing": 3,
+                  "strokeWeight": 1,
+                  "strokeAlign": "INSIDE",
+                  "strokeCap": "NONE",
+                  "strokeJoin": "MITER",
+                  "children": [
+                    {
+                      "name": "Frame",
+                      "type": "FRAME",
+                      "width": 238,
+                      "height": 36,
+                      "layoutMode": "NONE",
+                      "primaryAxisSizingMode": "AUTO",
+                      "counterAxisSizingMode": "FIXED",
+                      "primaryAxisAlignItems": "MIN",
+                      "counterAxisAlignItems": "MIN",
+                      "strokeWeight": 1,
+                      "strokeAlign": "INSIDE",
+                      "strokeCap": "NONE",
+                      "strokeJoin": "MITER"
+                    },
+                    {
+                      "name": "Margin",
+                      "type": "FRAME",
+                      "width": 238,
+                      "height": 22,
+                      "layoutMode": "VERTICAL",
+                      "primaryAxisSizingMode": "AUTO",
+                      "counterAxisSizingMode": "FIXED",
+                      "primaryAxisAlignItems": "MIN",
+                      "counterAxisAlignItems": "MIN",
+                      "paddingBottom": 7,
+                      "strokeWeight": 1,
+                      "strokeAlign": "INSIDE",
+                      "strokeCap": "NONE",
+                      "strokeJoin": "MITER"
+                    },
+                    {
+                      "name": "Margin",
+                      "type": "FRAME",
+                      "width": 238,
+                      "height": 19,
+                      "layoutMode": "VERTICAL",
+                      "primaryAxisSizingMode": "AUTO",
+                      "counterAxisSizingMode": "FIXED",
+                      "primaryAxisAlignItems": "MIN",
+                      "counterAxisAlignItems": "MIN",
+                      "paddingBottom": 3,
+                      "strokeWeight": 1,
+                      "strokeAlign": "INSIDE",
+                      "strokeCap": "NONE",
+                      "strokeJoin": "MITER"
+                    },
+                    {
+                      "name": "Frame",
+                      "type": "FRAME",
+                      "width": 238,
+                      "height": 15,
+                      "layoutMode": "HORIZONTAL",
+                      "primaryAxisSizingMode": "FIXED",
+                      "counterAxisSizingMode": "AUTO",
+                      "primaryAxisAlignItems": "SPACE_BETWEEN",
+                      "counterAxisAlignItems": "MIN",
+                      "itemSpacing": 136,
+                      "strokeWeight": 1,
+                      "strokeAlign": "INSIDE",
+                      "strokeCap": "NONE",
+                      "strokeJoin": "MITER"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "book progres",
+              "type": "FRAME",
+              "width": 346,
+              "height": 131,
+              "cornerRadius": 8,
+              "layoutMode": "HORIZONTAL",
+              "primaryAxisSizingMode": "FIXED",
+              "counterAxisSizingMode": "AUTO",
+              "primaryAxisAlignItems": "MIN",
+              "counterAxisAlignItems": "MIN",
+              "paddingLeft": 15,
+              "paddingRight": 15,
+              "paddingTop": 15,
+              "paddingBottom": 15,
+              "itemSpacing": 14,
+              "fills": [
+                {
+                  "type": "SOLID",
+                  "opacity": 1,
+                  "color": {
+                    "r": 1,
+                    "g": 0.9921568632125854,
+                    "b": 0.9686274528503418,
+                    "a": 1,
+                    "hex": "#fffdf7"
+                  }
+                }
+              ],
+              "strokes": [
+                {
+                  "type": "SOLID",
+                  "opacity": 1,
+                  "color": {
+                    "r": 0.0784313753247261,
+                    "g": 0.0784313753247261,
+                    "b": 0.0784313753247261,
+                    "a": 1,
+                    "hex": "#141414"
+                  }
+                }
+              ],
+              "strokeWeight": 3,
+              "strokeAlign": "INSIDE",
+              "strokeCap": "NONE",
+              "strokeJoin": "MITER",
+              "effects": [
+                {
+                  "type": "DROP_SHADOW",
+                  "radius": 0,
+                  "spread": 0,
+                  "offset": {
+                    "x": 3,
+                    "y": 3
+                  },
+                  "color": {
+                    "r": 0.0784313753247261,
+                    "g": 0.0784313753247261,
+                    "b": 0.0784313753247261,
+                    "a": 1,
+                    "hex": "#141414"
+                  }
+                }
+              ],
+              "children": [
+                {
+                  "name": "pict",
+                  "type": "FRAME",
+                  "width": 64,
+                  "height": 100.6875,
+                  "layoutMode": "VERTICAL",
+                  "primaryAxisSizingMode": "FIXED",
+                  "counterAxisSizingMode": "FIXED",
+                  "primaryAxisAlignItems": "MIN",
+                  "counterAxisAlignItems": "MIN",
+                  "paddingBottom": 8.6875,
+                  "strokeWeight": 1,
+                  "strokeAlign": "INSIDE",
+                  "strokeCap": "NONE",
+                  "strokeJoin": "MITER",
+                  "children": [
+                    {
+                      "name": "Frame 8",
+                      "type": "FRAME",
+                      "width": 64,
+                      "height": 92,
+                      "cornerRadius": 4,
+                      "layoutMode": "NONE",
+                      "primaryAxisSizingMode": "AUTO",
+                      "counterAxisSizingMode": "FIXED",
+                      "primaryAxisAlignItems": "MIN",
+                      "counterAxisAlignItems": "MIN",
+                      "strokes": [
+                        {
+                          "type": "SOLID",
+                          "opacity": 1,
+                          "color": {
+                            "r": 0,
+                            "g": 0,
+                            "b": 0,
+                            "a": 1,
+                            "hex": "#000000"
+                          }
+                        }
+                      ],
+                      "strokeWeight": 3,
+                      "strokeAlign": "INSIDE",
+                      "strokeCap": "NONE",
+                      "strokeJoin": "MITER"
+                    }
+                  ]
+                },
+                {
+                  "name": "Frame",
+                  "type": "FRAME",
+                  "width": 238,
+                  "height": 101,
+                  "layoutMode": "VERTICAL",
+                  "primaryAxisSizingMode": "AUTO",
+                  "counterAxisSizingMode": "FIXED",
+                  "primaryAxisAlignItems": "MIN",
+                  "counterAxisAlignItems": "MIN",
+                  "itemSpacing": 3,
+                  "strokeWeight": 1,
+                  "strokeAlign": "INSIDE",
+                  "strokeCap": "NONE",
+                  "strokeJoin": "MITER",
+                  "children": [
+                    {
+                      "name": "Frame",
+                      "type": "FRAME",
+                      "width": 238,
+                      "height": 36,
+                      "layoutMode": "NONE",
+                      "primaryAxisSizingMode": "AUTO",
+                      "counterAxisSizingMode": "FIXED",
+                      "primaryAxisAlignItems": "MIN",
+                      "counterAxisAlignItems": "MIN",
+                      "strokeWeight": 1,
+                      "strokeAlign": "INSIDE",
+                      "strokeCap": "NONE",
+                      "strokeJoin": "MITER"
+                    },
+                    {
+                      "name": "Margin",
+                      "type": "FRAME",
+                      "width": 238,
+                      "height": 22,
+                      "layoutMode": "VERTICAL",
+                      "primaryAxisSizingMode": "AUTO",
+                      "counterAxisSizingMode": "FIXED",
+                      "primaryAxisAlignItems": "MIN",
+                      "counterAxisAlignItems": "MIN",
+                      "paddingBottom": 7,
+                      "strokeWeight": 1,
+                      "strokeAlign": "INSIDE",
+                      "strokeCap": "NONE",
+                      "strokeJoin": "MITER"
+                    },
+                    {
+                      "name": "Margin",
+                      "type": "FRAME",
+                      "width": 238,
+                      "height": 19,
+                      "layoutMode": "VERTICAL",
+                      "primaryAxisSizingMode": "AUTO",
+                      "counterAxisSizingMode": "FIXED",
+                      "primaryAxisAlignItems": "MIN",
+                      "counterAxisAlignItems": "MIN",
+                      "paddingBottom": 3,
+                      "strokeWeight": 1,
+                      "strokeAlign": "INSIDE",
+                      "strokeCap": "NONE",
+                      "strokeJoin": "MITER"
+                    },
+                    {
+                      "name": "Frame",
+                      "type": "FRAME",
+                      "width": 238,
+                      "height": 15,
+                      "layoutMode": "HORIZONTAL",
+                      "primaryAxisSizingMode": "FIXED",
+                      "counterAxisSizingMode": "AUTO",
+                      "primaryAxisAlignItems": "SPACE_BETWEEN",
+                      "counterAxisAlignItems": "MIN",
+                      "itemSpacing": 136,
+                      "strokeWeight": 1,
+                      "strokeAlign": "INSIDE",
+                      "strokeCap": "NONE",
+                      "strokeJoin": "MITER"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "book progres",
+              "type": "FRAME",
+              "width": 346,
+              "height": 131,
+              "cornerRadius": 8,
+              "layoutMode": "HORIZONTAL",
+              "primaryAxisSizingMode": "FIXED",
+              "counterAxisSizingMode": "AUTO",
+              "primaryAxisAlignItems": "MIN",
+              "counterAxisAlignItems": "MIN",
+              "paddingLeft": 15,
+              "paddingRight": 15,
+              "paddingTop": 15,
+              "paddingBottom": 15,
+              "itemSpacing": 14,
+              "fills": [
+                {
+                  "type": "SOLID",
+                  "opacity": 1,
+                  "color": {
+                    "r": 1,
+                    "g": 0.9921568632125854,
+                    "b": 0.9686274528503418,
+                    "a": 1,
+                    "hex": "#fffdf7"
+                  }
+                }
+              ],
+              "strokes": [
+                {
+                  "type": "SOLID",
+                  "opacity": 1,
+                  "color": {
+                    "r": 0.0784313753247261,
+                    "g": 0.0784313753247261,
+                    "b": 0.0784313753247261,
+                    "a": 1,
+                    "hex": "#141414"
+                  }
+                }
+              ],
+              "strokeWeight": 3,
+              "strokeAlign": "INSIDE",
+              "strokeCap": "NONE",
+              "strokeJoin": "MITER",
+              "effects": [
+                {
+                  "type": "DROP_SHADOW",
+                  "radius": 0,
+                  "spread": 0,
+                  "offset": {
+                    "x": 3,
+                    "y": 3
+                  },
+                  "color": {
+                    "r": 0.0784313753247261,
+                    "g": 0.0784313753247261,
+                    "b": 0.0784313753247261,
+                    "a": 1,
+                    "hex": "#141414"
+                  }
+                }
+              ],
+              "children": [
+                {
+                  "name": "pict",
+                  "type": "FRAME",
+                  "width": 64,
+                  "height": 100.6875,
+                  "layoutMode": "VERTICAL",
+                  "primaryAxisSizingMode": "FIXED",
+                  "counterAxisSizingMode": "FIXED",
+                  "primaryAxisAlignItems": "MIN",
+                  "counterAxisAlignItems": "MIN",
+                  "paddingBottom": 8.6875,
+                  "strokeWeight": 1,
+                  "strokeAlign": "INSIDE",
+                  "strokeCap": "NONE",
+                  "strokeJoin": "MITER",
+                  "children": [
+                    {
+                      "name": "Frame 8",
+                      "type": "FRAME",
+                      "width": 64,
+                      "height": 92,
+                      "cornerRadius": 4,
+                      "layoutMode": "NONE",
+                      "primaryAxisSizingMode": "AUTO",
+                      "counterAxisSizingMode": "FIXED",
+                      "primaryAxisAlignItems": "MIN",
+                      "counterAxisAlignItems": "MIN",
+                      "strokes": [
+                        {
+                          "type": "SOLID",
+                          "opacity": 1,
+                          "color": {
+                            "r": 0,
+                            "g": 0,
+                            "b": 0,
+                            "a": 1,
+                            "hex": "#000000"
+                          }
+                        }
+                      ],
+                      "strokeWeight": 3,
+                      "strokeAlign": "INSIDE",
+                      "strokeCap": "NONE",
+                      "strokeJoin": "MITER"
+                    }
+                  ]
+                },
+                {
+                  "name": "Frame",
+                  "type": "FRAME",
+                  "width": 238,
+                  "height": 101,
+                  "layoutMode": "VERTICAL",
+                  "primaryAxisSizingMode": "AUTO",
+                  "counterAxisSizingMode": "FIXED",
+                  "primaryAxisAlignItems": "MIN",
+                  "counterAxisAlignItems": "MIN",
+                  "itemSpacing": 3,
+                  "strokeWeight": 1,
+                  "strokeAlign": "INSIDE",
+                  "strokeCap": "NONE",
+                  "strokeJoin": "MITER",
+                  "children": [
+                    {
+                      "name": "Frame",
+                      "type": "FRAME",
+                      "width": 238,
+                      "height": 36,
+                      "layoutMode": "NONE",
+                      "primaryAxisSizingMode": "AUTO",
+                      "counterAxisSizingMode": "FIXED",
+                      "primaryAxisAlignItems": "MIN",
+                      "counterAxisAlignItems": "MIN",
+                      "strokeWeight": 1,
+                      "strokeAlign": "INSIDE",
+                      "strokeCap": "NONE",
+                      "strokeJoin": "MITER"
+                    },
+                    {
+                      "name": "Margin",
+                      "type": "FRAME",
+                      "width": 238,
+                      "height": 22,
+                      "layoutMode": "VERTICAL",
+                      "primaryAxisSizingMode": "AUTO",
+                      "counterAxisSizingMode": "FIXED",
+                      "primaryAxisAlignItems": "MIN",
+                      "counterAxisAlignItems": "MIN",
+                      "paddingBottom": 7,
+                      "strokeWeight": 1,
+                      "strokeAlign": "INSIDE",
+                      "strokeCap": "NONE",
+                      "strokeJoin": "MITER"
+                    },
+                    {
+                      "name": "Margin",
+                      "type": "FRAME",
+                      "width": 238,
+                      "height": 19,
+                      "layoutMode": "VERTICAL",
+                      "primaryAxisSizingMode": "AUTO",
+                      "counterAxisSizingMode": "FIXED",
+                      "primaryAxisAlignItems": "MIN",
+                      "counterAxisAlignItems": "MIN",
+                      "paddingBottom": 3,
+                      "strokeWeight": 1,
+                      "strokeAlign": "INSIDE",
+                      "strokeCap": "NONE",
+                      "strokeJoin": "MITER"
+                    },
+                    {
+                      "name": "Frame",
+                      "type": "FRAME",
+                      "width": 238,
+                      "height": 15,
+                      "layoutMode": "HORIZONTAL",
+                      "primaryAxisSizingMode": "FIXED",
+                      "counterAxisSizingMode": "AUTO",
+                      "primaryAxisAlignItems": "SPACE_BETWEEN",
+                      "counterAxisAlignItems": "MIN",
+                      "itemSpacing": 136,
+                      "strokeWeight": 1,
+                      "strokeAlign": "INSIDE",
+                      "strokeCap": "NONE",
+                      "strokeJoin": "MITER"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "navigation",
+      "type": "FRAME",
+      "width": 390,
+      "height": 70,
+      "layoutMode": "HORIZONTAL",
+      "primaryAxisSizingMode": "FIXED",
+      "counterAxisSizingMode": "FIXED",
+      "primaryAxisAlignItems": "MIN",
+      "counterAxisAlignItems": "MIN",
+      "paddingTop": 4,
+      "fills": [
+        {
+          "type": "SOLID",
+          "opacity": 1,
+          "color": {
+            "r": 1,
+            "g": 0.9921568632125854,
+            "b": 0.9686274528503418,
+            "a": 1,
+            "hex": "#fffdf7"
+          }
+        }
+      ],
+      "strokes": [
+        {
+          "type": "SOLID",
+          "opacity": 1,
+          "color": {
+            "r": 0.0784313753247261,
+            "g": 0.0784313753247261,
+            "b": 0.0784313753247261,
+            "a": 1,
+            "hex": "#141414"
+          }
+        }
+      ],
+      "strokeWeight": "Symbol(figma.mixed)",
+      "strokeAlign": "INSIDE",
+      "strokeCap": "NONE",
+      "strokeJoin": "MITER",
+      "children": [
+        {
+          "name": "main",
+          "type": "FRAME",
+          "width": 130,
+          "height": 66,
+          "layoutMode": "VERTICAL",
+          "primaryAxisSizingMode": "FIXED",
+          "counterAxisSizingMode": "FIXED",
+          "primaryAxisAlignItems": "CENTER",
+          "counterAxisAlignItems": "CENTER",
+          "paddingLeft": 34.75,
+          "paddingRight": 34.75,
+          "itemSpacing": 4,
+          "strokeWeight": 1,
+          "strokeAlign": "INSIDE",
+          "strokeCap": "NONE",
+          "strokeJoin": "MITER",
+          "children": [
+            {
+              "name": "Frame",
+              "type": "FRAME",
+              "width": 32,
+              "height": 32,
+              "cornerRadius": 8,
+              "layoutMode": "VERTICAL",
+              "primaryAxisSizingMode": "FIXED",
+              "counterAxisSizingMode": "FIXED",
+              "primaryAxisAlignItems": "CENTER",
+              "counterAxisAlignItems": "CENTER",
+              "fills": [
+                {
+                  "type": "SOLID",
+                  "opacity": 1,
+                  "color": {
+                    "r": 1,
+                    "g": 0.8352941274642944,
+                    "b": 0.18039216101169586,
+                    "a": 1,
+                    "hex": "#ffd52e"
+                  }
+                }
+              ],
+              "strokes": [
+                {
+                  "type": "SOLID",
+                  "opacity": 1,
+                  "color": {
+                    "r": 0.0784313753247261,
+                    "g": 0.0784313753247261,
+                    "b": 0.0784313753247261,
+                    "a": 1,
+                    "hex": "#141414"
+                  }
+                }
+              ],
+              "strokeWeight": 3,
+              "strokeAlign": "INSIDE",
+              "strokeCap": "NONE",
+              "strokeJoin": "MITER",
+              "children": [
+                {
+                  "name": "tdesign:address-book",
+                  "type": "FRAME",
+                  "width": 18,
+                  "height": 18,
+                  "layoutMode": "NONE",
+                  "primaryAxisSizingMode": "AUTO",
+                  "counterAxisSizingMode": "FIXED",
+                  "primaryAxisAlignItems": "MIN",
+                  "counterAxisAlignItems": "MIN",
+                  "fills": [
+                    {
+                      "type": "SOLID",
+                      "opacity": 1,
+                      "color": {
+                        "r": 1,
+                        "g": 1,
+                        "b": 1,
+                        "a": 1,
+                        "hex": "#ffffff"
+                      }
+                    }
+                  ],
+                  "strokeWeight": 1,
+                  "strokeAlign": "INSIDE",
+                  "strokeCap": "NONE",
+                  "strokeJoin": "MITER",
+                  "children": [
+                    {
+                      "name": "Group",
+                      "type": "GROUP",
+                      "width": 12.750000953674316,
+                      "height": 14.250000953674316
+                    }
+                  ]
+                },
+                {
+                  "name": "▤",
+                  "type": "TEXT",
+                  "skippedByOptimize": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "reviews",
+          "type": "FRAME",
+          "width": 130,
+          "height": 66,
+          "layoutMode": "VERTICAL",
+          "primaryAxisSizingMode": "FIXED",
+          "counterAxisSizingMode": "FIXED",
+          "primaryAxisAlignItems": "CENTER",
+          "counterAxisAlignItems": "CENTER",
+          "paddingLeft": 31.5,
+          "paddingRight": 31.5,
+          "itemSpacing": 4,
+          "strokeWeight": 1,
+          "strokeAlign": "INSIDE",
+          "strokeCap": "NONE",
+          "strokeJoin": "MITER",
+          "children": [
+            {
+              "name": "Margin",
+              "type": "FRAME",
+              "width": 38.5,
+              "height": 32,
+              "layoutMode": "VERTICAL",
+              "primaryAxisSizingMode": "AUTO",
+              "counterAxisSizingMode": "AUTO",
+              "primaryAxisAlignItems": "MIN",
+              "counterAxisAlignItems": "MIN",
+              "paddingLeft": 3.25,
+              "paddingRight": 3.25,
+              "strokeWeight": 1,
+              "strokeAlign": "INSIDE",
+              "strokeCap": "NONE",
+              "strokeJoin": "MITER",
+              "children": [
+                {
+                  "name": "Frame",
+                  "type": "FRAME",
+                  "width": 32,
+                  "height": 32,
+                  "cornerRadius": 8,
+                  "layoutMode": "VERTICAL",
+                  "primaryAxisSizingMode": "FIXED",
+                  "counterAxisSizingMode": "FIXED",
+                  "primaryAxisAlignItems": "CENTER",
+                  "counterAxisAlignItems": "CENTER",
+                  "strokes": [
+                    {
+                      "type": "SOLID",
+                      "opacity": 1,
+                      "color": {
+                        "r": 0.0784313753247261,
+                        "g": 0.0784313753247261,
+                        "b": 0.0784313753247261,
+                        "a": 1,
+                        "hex": "#141414"
+                      }
+                    }
+                  ],
+                  "strokeWeight": 3,
+                  "strokeAlign": "INSIDE",
+                  "strokeCap": "NONE",
+                  "strokeJoin": "MITER",
+                  "children": [
+                    {
+                      "name": "tdesign:chat-message",
+                      "type": "FRAME",
+                      "width": 18,
+                      "height": 18,
+                      "layoutMode": "NONE",
+                      "primaryAxisSizingMode": "AUTO",
+                      "counterAxisSizingMode": "FIXED",
+                      "primaryAxisAlignItems": "MIN",
+                      "counterAxisAlignItems": "MIN",
+                      "fills": [
+                        {
+                          "type": "SOLID",
+                          "opacity": 1,
+                          "color": {
+                            "r": 1,
+                            "g": 1,
+                            "b": 1,
+                            "a": 1,
+                            "hex": "#ffffff"
+                          }
+                        }
+                      ],
+                      "strokeWeight": 1,
+                      "strokeAlign": "INSIDE",
+                      "strokeCap": "NONE",
+                      "strokeJoin": "MITER"
+                    },
+                    {
+                      "name": "✦",
+                      "type": "TEXT",
+                      "skippedByOptimize": true
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "settings",
+          "type": "FRAME",
+          "width": 130,
+          "height": 66,
+          "layoutMode": "VERTICAL",
+          "primaryAxisSizingMode": "FIXED",
+          "counterAxisSizingMode": "FIXED",
+          "primaryAxisAlignItems": "CENTER",
+          "counterAxisAlignItems": "CENTER",
+          "paddingLeft": 34.75,
+          "paddingRight": 34.75,
+          "itemSpacing": 4,
+          "strokeWeight": 1,
+          "strokeAlign": "INSIDE",
+          "strokeCap": "NONE",
+          "strokeJoin": "MITER",
+          "children": [
+            {
+              "name": "Frame",
+              "type": "FRAME",
+              "width": 32,
+              "height": 32,
+              "cornerRadius": 8,
+              "layoutMode": "VERTICAL",
+              "primaryAxisSizingMode": "FIXED",
+              "counterAxisSizingMode": "FIXED",
+              "primaryAxisAlignItems": "CENTER",
+              "counterAxisAlignItems": "CENTER",
+              "strokes": [
+                {
+                  "type": "SOLID",
+                  "opacity": 1,
+                  "color": {
+                    "r": 0.0784313753247261,
+                    "g": 0.0784313753247261,
+                    "b": 0.0784313753247261,
+                    "a": 1,
+                    "hex": "#141414"
+                  }
+                }
+              ],
+              "strokeWeight": 3,
+              "strokeAlign": "INSIDE",
+              "strokeCap": "NONE",
+              "strokeJoin": "MITER",
+              "children": [
+                {
+                  "name": "tdesign:setting-1",
+                  "type": "FRAME",
+                  "width": 18,
+                  "height": 18,
+                  "layoutMode": "NONE",
+                  "primaryAxisSizingMode": "AUTO",
+                  "counterAxisSizingMode": "FIXED",
+                  "primaryAxisAlignItems": "MIN",
+                  "counterAxisAlignItems": "MIN",
+                  "fills": [
+                    {
+                      "type": "SOLID",
+                      "opacity": 1,
+                      "color": {
+                        "r": 1,
+                        "g": 1,
+                        "b": 1,
+                        "a": 1,
+                        "hex": "#ffffff"
+                      }
+                    }
+                  ],
+                  "strokeWeight": 1,
+                  "strokeAlign": "INSIDE",
+                  "strokeCap": "NONE",
+                  "strokeJoin": "MITER",
+                  "children": [
+                    {
+                      "name": "Group",
+                      "type": "GROUP",
+                      "width": 14.489997863769531,
+                      "height": 14.999998092651367
+                    }
+                  ]
+                },
+                {
+                  "name": "⚙",
+                  "type": "TEXT",
+                  "skippedByOptimize": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "phone bar",
+      "type": "FRAME",
+      "skippedByOptimize": true
+    }
+  ],
+  "textContent": [
+    {
+      "name": "HALO, RANGGA",
+      "text": "HALO, RANGGA",
+      "path": "Home design/contents/heading/say-hi/HALO, RANGGA",
+      "nodeType": "TEXT"
+    },
+    {
+      "name": "Bookshelf",
+      "text": "Bookshelf",
+      "path": "Home design/contents/heading/say-hi/Bookshelf",
+      "nodeType": "TEXT"
+    },
+    {
+      "name": "+",
+      "text": "+",
+      "path": "Home design/contents/heading/add-new/+",
+      "nodeType": "TEXT"
+    },
+    {
+      "name": "12",
+      "text": "12",
+      "path": "Home design/contents/status/done/Frame 4/Frame 3/12",
+      "nodeType": "TEXT"
+    },
+    {
+      "name": "SELESAI",
+      "text": "SELESAI",
+      "path": "Home design/contents/status/done/Frame 4/Frame 3/Frame/SELESAI",
+      "nodeType": "TEXT"
+    },
+    {
+      "name": "3",
+      "text": "3",
+      "path": "Home design/contents/status/on-progress/Frame 6/Frame 7/3",
+      "nodeType": "TEXT"
+    },
+    {
+      "name": "SEDANG",
+      "text": "SEDANG",
+      "path": "Home design/contents/status/on-progress/Frame 6/Frame 7/SEDANG",
+      "nodeType": "TEXT"
+    },
+    {
+      "name": "Tomorrow, and Tomorrow…",
+      "text": "Tomorrow, and\nTomorrow…",
+      "path": "Home design/contents/activites/book progres/Frame/Frame/Tomorrow, and Tomorrow…",
+      "nodeType": "TEXT"
+    },
+    {
+      "name": "Gabrielle Zevin",
+      "text": "Gabrielle Zevin",
+      "path": "Home design/contents/activites/book progres/Frame/Margin/Frame/Gabrielle Zevin",
+      "nodeType": "TEXT"
+    },
+    {
+      "name": "p.264 / 416",
+      "text": "p.264 / 416",
+      "path": "Home design/contents/activites/book progres/Frame/Frame/p.264 / 416",
+      "nodeType": "TEXT"
+    },
+    {
+      "name": "64%",
+      "text": "64%",
+      "path": "Home design/contents/activites/book progres/Frame/Frame/64%",
+      "nodeType": "TEXT"
+    },
+    {
+      "name": "Project Hail Mary",
+      "text": "Project Hail\nMary",
+      "path": "Home design/contents/activites/book progres/Frame/Frame/Project Hail Mary",
+      "nodeType": "TEXT"
+    },
+    {
+      "name": "Andy Weir",
+      "text": "Andy Weir",
+      "path": "Home design/contents/activites/book progres/Frame/Margin/Frame/Andy Weir",
+      "nodeType": "TEXT"
+    },
+    {
+      "name": "p.104 / 476",
+      "text": "p.104 / 476",
+      "path": "Home design/contents/activites/book progres/Frame/Frame/p.104 / 476",
+      "nodeType": "TEXT"
+    },
+    {
+      "name": "22%",
+      "text": "22%",
+      "path": "Home design/contents/activites/book progres/Frame/Frame/22%",
+      "nodeType": "TEXT"
+    },
+    {
+      "name": "Atomic Habits",
+      "text": "Atomic Habits",
+      "path": "Home design/contents/activites/book progres/Frame/Frame/Atomic Habits",
+      "nodeType": "TEXT"
+    },
+    {
+      "name": "James Clear",
+      "text": "James Clear",
+      "path": "Home design/contents/activites/book progres/Frame/Margin/Frame/James Clear",
+      "nodeType": "TEXT"
+    },
+    {
+      "name": "p.281 / 320",
+      "text": "p.281 / 320",
+      "path": "Home design/contents/activites/book progres/Frame/Frame/p.281 / 320",
+      "nodeType": "TEXT"
+    },
+    {
+      "name": "88%",
+      "text": "88%",
+      "path": "Home design/contents/activites/book progres/Frame/Frame/88%",
+      "nodeType": "TEXT"
+    }
+  ]
+}

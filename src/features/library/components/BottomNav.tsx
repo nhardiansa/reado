@@ -17,7 +17,7 @@ const tabs: { key: TabKey; Icon: typeof Library }[] = [
 
 export function BottomNav({ activeTab = "main" }: BottomNavProps): React.ReactElement {
   return (
-    <View className="h-[70px] flex-row border-t-[3px] border-clay bg-clay-card pt-[4px]">
+    <View className="h-[70px] flex-row border-clay border-t-[3px] bg-clay-card pt-[4px]">
       {tabs.map(({ key, Icon }) => {
         const isActive = key === activeTab;
         return (

@@ -22,30 +22,30 @@
 
 ## File Structure
 
-| File | Action | Responsibility |
-|---|---|---|
-| `src/theme/tokens.ts` | Modify | Neobrutalist color/spacing/radius/shadow/font tokens |
-| `src/theme/__tests__/tokens.test.ts` | Modify | Assert new token values |
-| `tailwind.config.js` | Modify | Mirror tokens as Tailwind utilities + fontFamily |
-| `app.config.ts` | Modify | Splash + adaptive icon bg → `#FFFFFF` |
-| `src/app/_layout.tsx` | Modify | Load fonts via useFonts, gate splash |
-| `src/app/index.tsx` | Modify | Thin mount of HomeScreen |
-| `src/components/ClayCard.tsx` | Create | Shared bordered + hard-shadow box primitive |
-| `src/components/__tests__/ClayCard.test.tsx` | Create | ClayCard tests |
-| `src/features/library/types.ts` | Create | HomeBook feature-local type |
-| `src/features/library/data/mock-books.ts` | Create | 3 sample books + counts |
-| `src/features/library/data/__tests__/mock-books.test.ts` | Create | Mock data tests |
-| `src/features/library/components/HomeHeader.tsx` | Create | Greeting + add button |
-| `src/features/library/components/StatusSummary.tsx` | Create | 2 stat cards (SELESAI / SEDANG) |
-| `src/features/library/components/BookProgressCard.tsx` | Create | Single book row card |
-| `src/features/library/components/BookProgressList.tsx` | Create | Maps mock books → cards |
-| `src/features/library/components/EmptyState.tsx` | Create | Empty library state |
-| `src/features/library/components/LoadingState.tsx` | Create | 3 skeleton cards w/ pulse |
-| `src/features/library/components/BottomNav.tsx` | Create | Static 3-tab bar |
-| `src/features/library/components/__tests__/*.test.tsx` | Create | One per component |
-| `src/features/library/screens/home/index.tsx` | Create | Composes all + state switch |
-| `src/features/library/screens/home/__tests__/HomeScreen.test.tsx` | Create | State-branch tests |
-| `src/features/library/index.ts` | Create | Barrel: export { HomeScreen } |
+| File                                                              | Action | Responsibility                                       |
+| ----------------------------------------------------------------- | ------ | ---------------------------------------------------- |
+| `src/theme/tokens.ts`                                             | Modify | Neobrutalist color/spacing/radius/shadow/font tokens |
+| `src/theme/__tests__/tokens.test.ts`                              | Modify | Assert new token values                              |
+| `tailwind.config.js`                                              | Modify | Mirror tokens as Tailwind utilities + fontFamily     |
+| `app.config.ts`                                                   | Modify | Splash + adaptive icon bg → `#FFFFFF`                |
+| `src/app/_layout.tsx`                                             | Modify | Load fonts via useFonts, gate splash                 |
+| `src/app/index.tsx`                                               | Modify | Thin mount of HomeScreen                             |
+| `src/components/ClayCard.tsx`                                     | Create | Shared bordered + hard-shadow box primitive          |
+| `src/components/__tests__/ClayCard.test.tsx`                      | Create | ClayCard tests                                       |
+| `src/features/library/types.ts`                                   | Create | HomeBook feature-local type                          |
+| `src/features/library/data/mock-books.ts`                         | Create | 3 sample books + counts                              |
+| `src/features/library/data/__tests__/mock-books.test.ts`          | Create | Mock data tests                                      |
+| `src/features/library/components/HomeHeader.tsx`                  | Create | Greeting + add button                                |
+| `src/features/library/components/StatusSummary.tsx`               | Create | 2 stat cards (SELESAI / SEDANG)                      |
+| `src/features/library/components/BookProgressCard.tsx`            | Create | Single book row card                                 |
+| `src/features/library/components/BookProgressList.tsx`            | Create | Maps mock books → cards                              |
+| `src/features/library/components/EmptyState.tsx`                  | Create | Empty library state                                  |
+| `src/features/library/components/LoadingState.tsx`                | Create | 3 skeleton cards w/ pulse                            |
+| `src/features/library/components/BottomNav.tsx`                   | Create | Static 3-tab bar                                     |
+| `src/features/library/components/__tests__/*.test.tsx`            | Create | One per component                                    |
+| `src/features/library/screens/home/index.tsx`                     | Create | Composes all + state switch                          |
+| `src/features/library/screens/home/__tests__/HomeScreen.test.tsx` | Create | State-branch tests                                   |
+| `src/features/library/index.ts`                                   | Create | Barrel: export { HomeScreen }                        |
 
 **Packages to install:** `@expo-google-fonts/archivo-black`, `@expo-google-fonts/jetbrains-mono` (user-approved). `expo-font` + `expo-splash-screen` already in `package.json`.
 
@@ -54,11 +54,13 @@
 ### Task 1: Neobrutalist tokens + Tailwind config
 
 **Files:**
+
 - Modify: `src/theme/tokens.ts`
 - Modify: `src/theme/__tests__/tokens.test.ts`
 - Modify: `tailwind.config.js`
 
 **Interfaces:**
+
 - Produces: `colors` (with `accentPink`), `fonts` ({ `archivoBlack`, `jetbrainsMonoBold` }), updated `radius` ({ card:8, button:8, modal:8 }), updated `clayShadow` (default {3,3}, emphasized {4,4}), `shadow` color `#141414`. Tailwind utilities `bg-clay-bg`, `bg-clay-card`, `bg-clay-accent`, `bg-clay-accent-pink`, `border-clay`, `shadow-clay`, `font-archivo`, `font-jetbrains` available to later tasks.
 
 - [ ] **Step 1: Update tokens test with new expected values (failing)**
@@ -275,26 +277,30 @@ git commit -m "refactor(theme): rewrite tokens to neobrutalist values
 ### Task 2: Font loading + splash config
 
 **Files:**
+
 - Modify: `app.config.ts` (lines 20, 36 — adaptiveIcon + splash bg)
 - Modify: `src/app/_layout.tsx`
 
 **Interfaces:**
+
 - Consumes: `fonts` from `@/theme/tokens` (Task 1)
 - Produces: `ArchivoBlack_400Regular` + `JetBrainsMono_700Bold` loaded app-wide; `font-archivo` / `font-jetbrains` Tailwind utilities functional. Splash stays visible until fonts loaded.
 
 - [ ] **Step 1: Install font packages**
 
 Run:
+
 ```bash
 npm install @expo-google-fonts/archivo-black @expo-google-fonts/jetbrains-mono
 ```
+
 Expected: packages added to `package.json` dependencies. Both packages already whitelisted in `jest.config.js` `transformIgnorePatterns`.
 
 - [ ] **Step 2: Update splash + adaptive icon bg in app.config.ts**
 
 In `app.config.ts`, change `backgroundColor: "#F8EFD9"` → `backgroundColor: "#FFFFFF"` in both the android.adaptiveIcon block and the expo-splash-screen plugin block.
 
-- [ ] **Step 3: Rewrite _layout.tsx with font loading + splash gating**
+- [ ] **Step 3: Rewrite \_layout.tsx with font loading + splash gating**
 
 Replace entire contents of `src/app/_layout.tsx`:
 
@@ -365,10 +371,12 @@ git commit -m "feat(layout): load Archivo Black + JetBrains Mono fonts
 ### Task 3: ClayCard shared primitive
 
 **Files:**
+
 - Create: `src/components/ClayCard.tsx`
 - Create: `src/components/__tests__/ClayCard.test.tsx`
 
 **Interfaces:**
+
 - Produces: `ClayCard` — `import { ClayCard } from "@/components/ClayCard"`. Props: `{ as?: 'View'|'Pressable'; borderWidth?: 'standard'|'emphasized'; shadow?: 'default'|'emphasized'|'none'; radius?: 'card'|'button'|'modal'; className?: string; children?: React.ReactNode; onPress?: () => void; testID?: string }`. Defaults: `as='View'`, `borderWidth='emphasized'`, `shadow='default'`, `radius='card'`.
 
 - [ ] **Step 1: Write failing test**
@@ -501,11 +509,13 @@ git commit -m "feat(components): add ClayCard neobrutalist primitive"
 ### Task 4: HomeBook type + mock data
 
 **Files:**
+
 - Create: `src/features/library/types.ts`
 - Create: `src/features/library/data/mock-books.ts`
 - Create: `src/features/library/data/__tests__/mock-books.test.ts`
 
 **Interfaces:**
+
 - Produces: `HomeBook` (`{ id: string; title: string; author: string; currentPage: number; totalPages: number; percent: number }`), `mockBooks: HomeBook[]` (3 items), `mockCounts: { finished: number; inProgress: number }`.
 
 - [ ] **Step 1: Write failing test**
@@ -530,9 +540,30 @@ describe("mock-books", () => {
   });
 
   it("matches mockup data exactly", () => {
-    expect(mockBooks[0]).toEqual({ id: "1", title: "Tomorrow, and Tomorrow…", author: "Gabrielle Zevin", currentPage: 264, totalPages: 416, percent: 64 });
-    expect(mockBooks[1]).toEqual({ id: "2", title: "Project Hail Mary", author: "Andy Weir", currentPage: 104, totalPages: 476, percent: 22 });
-    expect(mockBooks[2]).toEqual({ id: "3", title: "Atomic Habits", author: "James Clear", currentPage: 281, totalPages: 320, percent: 88 });
+    expect(mockBooks[0]).toEqual({
+      id: "1",
+      title: "Tomorrow, and Tomorrow…",
+      author: "Gabrielle Zevin",
+      currentPage: 264,
+      totalPages: 416,
+      percent: 64,
+    });
+    expect(mockBooks[1]).toEqual({
+      id: "2",
+      title: "Project Hail Mary",
+      author: "Andy Weir",
+      currentPage: 104,
+      totalPages: 476,
+      percent: 22,
+    });
+    expect(mockBooks[2]).toEqual({
+      id: "3",
+      title: "Atomic Habits",
+      author: "James Clear",
+      currentPage: 281,
+      totalPages: 320,
+      percent: 88,
+    });
   });
 
   it("exports counts finished:12, inProgress:3", () => {
@@ -565,9 +596,30 @@ export interface HomeBook {
 import type { HomeBook } from "../types";
 
 export const mockBooks: HomeBook[] = [
-  { id: "1", title: "Tomorrow, and Tomorrow…", author: "Gabrielle Zevin", currentPage: 264, totalPages: 416, percent: 64 },
-  { id: "2", title: "Project Hail Mary", author: "Andy Weir", currentPage: 104, totalPages: 476, percent: 22 },
-  { id: "3", title: "Atomic Habits", author: "James Clear", currentPage: 281, totalPages: 320, percent: 88 },
+  {
+    id: "1",
+    title: "Tomorrow, and Tomorrow…",
+    author: "Gabrielle Zevin",
+    currentPage: 264,
+    totalPages: 416,
+    percent: 64,
+  },
+  {
+    id: "2",
+    title: "Project Hail Mary",
+    author: "Andy Weir",
+    currentPage: 104,
+    totalPages: 476,
+    percent: 22,
+  },
+  {
+    id: "3",
+    title: "Atomic Habits",
+    author: "James Clear",
+    currentPage: 281,
+    totalPages: 320,
+    percent: 88,
+  },
 ];
 
 export const mockCounts = { finished: 12, inProgress: 3 };
@@ -590,10 +642,12 @@ git commit -m "feat(library): add HomeBook type + mock data"
 ### Task 5: HomeHeader
 
 **Files:**
+
 - Create: `src/features/library/components/HomeHeader.tsx`
 - Create: `src/features/library/components/__tests__/HomeHeader.test.tsx`
 
 **Interfaces:**
+
 - Consumes: `ClayCard` (Task 3)
 - Produces: `HomeHeader` — props `{ onAddPress?: () => void }`
 
@@ -671,10 +725,12 @@ git commit -m "feat(library): add HomeHeader"
 ### Task 6: StatusSummary
 
 **Files:**
+
 - Create: `src/features/library/components/StatusSummary.tsx`
 - Create: `src/features/library/components/__tests__/StatusSummary.test.tsx`
 
 **Interfaces:**
+
 - Consumes: `ClayCard`, `lucide-react-native` `Book` + `BookOpen`
 - Produces: `StatusSummary` — props `{ finished: number; inProgress: number }`
 
@@ -769,10 +825,12 @@ git commit -m "feat(library): add StatusSummary stat cards"
 ### Task 7: BookProgressCard
 
 **Files:**
+
 - Create: `src/features/library/components/BookProgressCard.tsx`
 - Create: `src/features/library/components/__tests__/BookProgressCard.test.tsx`
 
 **Interfaces:**
+
 - Consumes: `ClayCard`, `HomeBook`
 - Produces: `BookProgressCard` — props `{ book: HomeBook; onPress?: (id: string) => void }`. Renders title, author, `p.{currentPage} / {totalPages}`, `{percent}%`.
 
@@ -868,10 +926,12 @@ git commit -m "feat(library): add BookProgressCard"
 ### Task 8: BookProgressList
 
 **Files:**
+
 - Create: `src/features/library/components/BookProgressList.tsx`
 - Create: `src/features/library/components/__tests__/BookProgressList.test.tsx`
 
 **Interfaces:**
+
 - Consumes: `BookProgressCard`, `HomeBook`
 - Produces: `BookProgressList` — props `{ books: HomeBook[]; onBookPress?: (id: string) => void }`
 
@@ -937,10 +997,12 @@ git commit -m "feat(library): add BookProgressList"
 ### Task 9: EmptyState
 
 **Files:**
+
 - Create: `src/features/library/components/EmptyState.tsx`
 - Create: `src/features/library/components/__tests__/EmptyState.test.tsx`
 
 **Interfaces:**
+
 - Consumes: `ClayCard`, `lucide-react-native` `BookOpen`
 - Produces: `EmptyState` — props `{ onAddPress?: () => void }`
 
@@ -1020,10 +1082,12 @@ git commit -m "feat(library): add EmptyState"
 ### Task 10: LoadingState
 
 **Files:**
+
 - Create: `src/features/library/components/LoadingState.tsx`
 - Create: `src/features/library/components/__tests__/LoadingState.test.tsx`
 
 **Interfaces:**
+
 - Consumes: `ClayCard`, `react-native-reanimated` `Animated` + `useAnimatedStyle` + `withRepeat` + `withTiming`
 - Produces: `LoadingState` — props none. Renders 3 skeleton cards with opacity pulse 0.6↔1.0 loop.
 
@@ -1102,10 +1166,12 @@ git commit -m "feat(library): add LoadingState with reanimated pulse"
 ### Task 11: BottomNav
 
 **Files:**
+
 - Create: `src/features/library/components/BottomNav.tsx`
 - Create: `src/features/library/components/__tests__/BottomNav.test.tsx`
 
 **Interfaces:**
+
 - Consumes: `ClayCard`, `lucide-react-native` `AddressBook` + `MessageCircle` + `Settings`
 - Produces: `BottomNav` — props `{ activeTab?: 'main'|'reviews'|'settings' }` (default `'main'`). Non-functional onPress (static slice).
 
@@ -1188,11 +1254,13 @@ git commit -m "feat(library): add BottomNav static 3-tab bar"
 ### Task 12: HomeScreen + barrel
 
 **Files:**
+
 - Create: `src/features/library/screens/home/index.tsx`
 - Create: `src/features/library/screens/home/__tests__/HomeScreen.test.tsx`
 - Create: `src/features/library/index.ts`
 
 **Interfaces:**
+
 - Consumes: `HomeHeader`, `StatusSummary`, `BookProgressList`, `EmptyState`, `LoadingState`, `BottomNav`, `mockBooks`, `mockCounts`, `react-native-safe-area-context` `SafeAreaView`
 - Produces: `HomeScreen` default export. `src/features/library/index.ts` barrel re-exports `{ HomeScreen }`.
 
@@ -1330,9 +1398,11 @@ git commit -m "feat(library): add HomeScreen with 3-state switch + barrel"
 ### Task 13: Wire app/index.tsx
 
 **Files:**
+
 - Modify: `src/app/index.tsx`
 
 **Interfaces:**
+
 - Consumes: `HomeScreen` from `@/features/library` (Task 12)
 - Produces: default export `Index` that mounts `<HomeScreen />`.
 
@@ -1390,6 +1460,7 @@ Expected: PASS (or run `npm run format` if any files need formatting)
 
 Run: `npm run android` (requires emulator/device)
 Expected:
+
 - Splash → app loads with fonts (Archivo Black titles, JetBrains Mono labels)
 - Home screen renders: "HALO, RANGGA" + "Bookshelf" title, 2 stat cards (12 SELESAI off-white, 3 SEDANG pink), 3 book cards with mock data, bottom nav with main tab yellow
 - Long-press greeting cycles: ready → empty (Belum ada buku) → loading (3 pulsing skeletons) → ready

@@ -199,7 +199,7 @@ Box with neobrutalist border + hard shadow. Default: `as='View'`, `borderWidth='
 | ---------------- | ------------------- |
 | `book`           | `Book`              |
 | `book-open`      | `BookOpen`          |
-| `address-book` | `Library` |
+| `address-book`   | `Library`           |
 | `chat-message`   | `MessageCircle`     |
 | `setting-1`      | `Settings`          |
 

@@ -8,7 +8,10 @@ interface BookProgressListProps {
   onBookPress?: (id: string) => void;
 }
 
-export function BookProgressList({ books, onBookPress }: BookProgressListProps): React.ReactElement {
+export function BookProgressList({
+  books,
+  onBookPress,
+}: BookProgressListProps): React.ReactElement {
   return (
     <View className="gap-[14px] px-[22px]">
       {books.map((book) => (
