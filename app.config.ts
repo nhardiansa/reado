@@ -17,7 +17,7 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
   android: {
     package: "com.reado.app",
     adaptiveIcon: {
-      backgroundColor: "#F8EFD9",
+      backgroundColor: "#FFFFFF",
       foregroundImage: "./assets/images/android-icon-foreground.png",
       backgroundImage: "./assets/images/android-icon-background.png",
       monochromeImage: "./assets/images/android-icon-monochrome.png",
@@ -33,7 +33,7 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
     [
       "expo-splash-screen",
       {
-        backgroundColor: "#F8EFD9",
+        backgroundColor: "#FFFFFF",
         image: "./assets/images/splash-icon.png",
         imageWidth: 76,
       },
